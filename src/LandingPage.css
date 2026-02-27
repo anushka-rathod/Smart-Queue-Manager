@@ -1,0 +1,165 @@
+/* ===== Global Styles ===== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7fb;
+  color: #333;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #1e4db7;
+}
+
+.nav-buttons button {
+  margin-left: 15px;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+}
+
+.login-btn {
+  background: transparent;
+  color: #1e4db7;
+  font-weight: 600;
+}
+
+.register-btn {
+  background-color: #1e4db7;
+  color: white;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 42px;
+  color: #1e4db7;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #555;
+}
+
+.book-btn {
+  margin-top: 30px;
+  padding: 14px 28px;
+  background-color: #1aa34a;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #14893c;
+}
+
+/* ===== Section Styling ===== */
+.section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 28px;
+  color: #1e4db7;
+  margin-bottom: 40px;
+}
+
+/* ===== Cards ===== */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  width: 280px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+  text-align: center;
+}
+
+.card h3 {
+  color: #1e4db7;
+  margin-bottom: 10px;
+}
+
+/* ===== Benefits List ===== */
+.benefits-list {
+  list-style: none;
+  padding: 0;
+}
+
+.benefits-list li {
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+/* ===== Rush Indicators (Future Use) ===== */
+.rush-low {
+  color: #1aa34a;
+  font-weight: bold;
+}
+
+.rush-medium {
+  color: #f4b400;
+  font-weight: bold;
+}
+
+.rush-high {
+  color: #e53935;
+  font-weight: bold;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background-color: #1e4db7;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+/* ===== Mobile Responsive ===== */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 30px;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
